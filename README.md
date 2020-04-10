@@ -21,5 +21,3 @@ npm run start
 ## About
 
 This project uses both `apollo-server` and `apollo-server-lambda` so that you can write your GraphQL resolvers and type definitions in one place, yet run GraphQL servers locally and serverlessly.
-
-Check out [server.ts](https://github.com/stemmlerjs/serverless-typescript-graphql-netlify-starter/blob/master/src/server.ts) for how it works.
