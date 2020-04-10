@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bb4daf08-e525-421f-b55c-0294053edf2b/deploy-status)](https://app.netlify.com/sites/mock-apollo-server/deploys)
-# serverless-typescript-graphql-netlify-starter
+# Serverless-Typescript-Graphql-Netlify-Starter-Kit
 ⚡A serverless TypeScript GraphQL API deployed on Netlify
 
 ## Installation
