@@ -19,6 +19,27 @@ To run the project locally, use the `start` command.
 ```bash
 npm run start
 ```
+
+### Sample Query
+```
+{
+  allCompanies {
+    id
+    companyName
+    country
+    catchPhrase
+  }
+  allEmployees {
+    id
+    email
+    userName
+    description
+    city
+  }
+}
+
+```
+
 ## About
 
 This project uses both `apollo-server` and `apollo-server-lambda` so that you can write your GraphQL resolvers and type definitions in one place, yet run GraphQL servers locally and serverlessly.
