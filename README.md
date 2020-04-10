@@ -22,7 +22,7 @@ npm run start
 
 ### Sample Query
 ```
-{
+query {
   allCompanies {
     id
     companyName
