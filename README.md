@@ -40,6 +40,10 @@ query {
 
 ```
 
+### Practice
+
+[![Edit elastic-shirley-0whsd](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/serverless-typescript-graphql-netlify-starter-42fvf)
+
 ## About
 
 This project uses both `apollo-server` and `apollo-server-lambda` so that you can write your GraphQL resolvers and type definitions in one place, yet run GraphQL servers locally and serverlessly.
