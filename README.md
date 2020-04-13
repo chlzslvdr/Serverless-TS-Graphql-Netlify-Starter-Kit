@@ -23,17 +23,26 @@ npm run start
 ### Sample Query
 ```
 query {
-  allCompanies {
+  companyLists {
     id
     companyName
     country
     catchPhrase
   }
-  allEmployees {
+  employeeLists {
     id
+    name
+    age
+    jobTitle
+    jobArea
+    state
+  }
+  residentsList {
+    id
+    name
+    age
+    gender
     email
-    userName
-    description
     city
   }
 }
