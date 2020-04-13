@@ -40,9 +40,9 @@ const genderLists = ['Female', 'Male'];
 
 const mocks = {
   Query: () => ({
-    companyLists: () => new MockList(15),
-    employeeLists: () => new MockList(15),
-    residentsList: () => new MockList(20),
+    companyLists: () => new MockList(25),
+    employeeLists: () => new MockList(35),
+    residentsList: () => new MockList(30),
   }),
   Company: () => ({
     id: () => faker.random.uuid(),
