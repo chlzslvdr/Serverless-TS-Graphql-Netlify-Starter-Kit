@@ -8,27 +8,41 @@ const typeDefs = gql`
     id: ID!
     companyName: String!
     country: String!
-    catchPhrase: String!
+    catchPhrase: String
   }
 
   type Employee {
     id: ID!
-    userName: String!
+    name: String!
+    age: String
+    jobTitle: String!
+    jobArea: String
+    state: String
+  }
+
+  type Resident {
+    id: ID!
+    name: String!
+    age: String!
+    gender: String!
     email: String!
-    description: String
     city: String
   }
 
   type Query {
-    allCompanies: [Company!]!
-    allEmployees: [Employee!]!
+    companyLists: [Company!]!
+    employeeLists: [Employee!]!
+    residentsList: [Resident!]!
   }
 `;
 
+const genderLists = ['Female', 'Male'];
+
 const mocks = {
   Query: () => ({
-    allCompanies: () => new MockList(25),
-    allEmployees: () => new MockList(25),
+    companyLists: () => new MockList(15),
+    employeeLists: () => new MockList(15),
+    residentsList: () => new MockList(20),
   }),
   Company: () => ({
     id: () => faker.random.uuid(),
@@ -38,8 +52,17 @@ const mocks = {
   }),
   Employee: () => ({
     id: () => faker.random.uuid(),
-    userName: () => faker.name.findName(),
-    description: () => faker.lorem.sentence(),
+    name: () => faker.name.findName(),
+    age: () => faker.random.number({min: 19, max: 60}),
+    jobTitle: () => faker.name.jobTitle(),
+    jobArea: () => faker.name.jobArea(),
+    state: () => faker.address.state(),
+  }),
+  Resident: () => ({
+    id: () => faker.random.uuid(),
+    name: () => faker.name.findName(),
+    age: () => faker.random.number({min: 12, max: 65}),
+    gender: () => faker.random.arrayElement(genderLists),
     email: () => faker.internet.email(),
     city: () => faker.address.city(),
   }),
