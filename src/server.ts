@@ -79,14 +79,12 @@ function createLambdaServer () {
 
 function createLocalServer () {
   return new ApolloServer({
-    cors: {
-      origin: '*',
-      credentials: true
-    },	
+    cors:true,
     typeDefs,
     mocks,
     introspection: true,
     playground: true,
+    
   });
 }
 
