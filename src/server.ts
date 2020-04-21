@@ -79,7 +79,6 @@ function createLambdaServer () {
 
 function createLocalServer () {
   return new ApolloServer({
-    cors:true,
     typeDefs,
     mocks,
     introspection: true,

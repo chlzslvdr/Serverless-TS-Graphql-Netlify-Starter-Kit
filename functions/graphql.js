@@ -4,8 +4,9 @@ const { createLambdaServer } = require("./bundle/server")
 const graphQLServer = createLambdaServer();
 
 exports.handler = graphQLServer.createHandler({
-  cors: {
-    origin: '*'
+    cors: {
+      origin: true,
+      credentials: true
   }
 });
 
