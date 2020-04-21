@@ -2,7 +2,7 @@
 # Serverless-Typescript-Graphql-Netlify-Starter-Kit
 A serverless TypeScript GraphQL API deployed on Netlify
 
-[LIVE DEMO](https://mock-apollo-server.netlify.com)
+[LIVE DEMO](https://mock-apollo-server.netlify.app)
 
 ## Installation
 
